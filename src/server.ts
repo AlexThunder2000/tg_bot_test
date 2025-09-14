@@ -80,7 +80,7 @@ bot.command("start", async (ctx) => {
 
 // Основні послуги → показати 3 кнопки
 bot.callbackQuery("menu:services", async (ctx) => {
-  await editOrReply(ctx, "Оберіть послугу:", { ...kbServices() });
+  await editOrReply(ctx, "Оберіть послугу:", kbServices());
   await ctx.answerCallbackQuery();
 });
 
@@ -94,13 +94,13 @@ bot.callbackQuery("menu:extra", async (ctx) => {
 
 // 7 груп
 bot.callbackQuery("menu:technique", async (ctx) => {
-  await editOrReply(ctx, "Оберіть групу м'язів:", { ...kbCategories() });
+  await editOrReply(ctx, "Оберіть групу м'язів:", kbCategories());
   await ctx.answerCallbackQuery();
 });
 
 // назад на головне меню (тут краще також через editOrReply, бо виклик йде з медіа)
 bot.callbackQuery("menu:root", async (ctx) => {
-  await editOrReply(ctx, "Оберіть розділ 👇", { ...kbMain() });
+  await editOrReply(ctx, "Оберіть розділ 👇", kbMain());
   await ctx.answerCallbackQuery();
 });
 
@@ -157,9 +157,7 @@ bot.callbackQuery(/^cat:(.+)$/, async (ctx) => {
   if (!cat) return ctx.answerCallbackQuery({ text: "Категорію не знайдено" });
 
   if (cat.subgroups?.length) {
-    await editOrReply(ctx, `Група: ${cat.title}\nОберіть підгрупу:`, {
-      ...kbSubgroups(cat.key),
-    });
+    await editOrReply(ctx, `Група: ${cat.title}\nОберіть підгрупу:`, kbSubgroups(cat.key));
   } else {
     const list = cat.exercises ?? [];
     const kb = kbExercisesInCat(cat.key);
@@ -168,7 +166,7 @@ bot.callbackQuery(/^cat:(.+)$/, async (ctx) => {
       list.length
         ? `Група: ${cat.title}\nОберіть вправу:`
         : `Група: ${cat.title}\n(поки немає вправ)`,
-      { ...kb }
+      kb
     );
   }
   await ctx.answerCallbackQuery();
@@ -180,9 +178,7 @@ bot.callbackQuery(/^sub:([^:]+):(.+)$/, async (ctx) => {
   const sg = cat?.subgroups?.find((s) => s.key === subKey);
   if (!cat || !sg) return ctx.answerCallbackQuery({ text: "Підгрупу не знайдено" });
 
-  await editOrReply(ctx, `Група: ${cat.title} → ${sg.title}\nОберіть вправу:`, {
-    ...kbExercisesInSub(catKey, subKey),
-  });
+  await editOrReply(ctx, `Група: ${cat.title} → ${sg.title}\nОберіть вправу:`, kbExercisesInSub(catKey, subKey));
   await ctx.answerCallbackQuery();
 });
 
