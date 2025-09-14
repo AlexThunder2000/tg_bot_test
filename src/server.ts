@@ -115,7 +115,7 @@ function kbServices() {
 
 const FORM_URL =
   "https://docs.google.com/forms/d/e/1FAIpQLSck85art2UnEy-gYv4oIN-BwXaLLh7jQNg3WkzP0DVZ8pi_YA/viewform?usp=preview";
-const DM_URL = "https://t.me/Dmchk_ft"; // перевір, що нік саме такий
+const DM_URL = "https://t.me/Dmchkft"; 
 
 function kbServiceDetails() {
   return new InlineKeyboard()
@@ -123,7 +123,7 @@ function kbServiceDetails() {
     .row()
     .url("✉️ Написати мені", DM_URL)
     .row()
-    .text("⬅ Назад", "menu:services");
+   .text("⬅ Назад до послуг", `del:${Date.now()}`);
 }
 
 bot.callbackQuery("svc:prog", async (ctx) => {
