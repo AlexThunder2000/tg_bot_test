@@ -71,22 +71,44 @@ export const CATEGORIES: Category[] = [
         key: "front-delta",
         title: "Передня дельта",
         exercises: [
-      
+          { title: "Жим гантелей сидячи", fileId: "BAACAgIAAyEGAAS2J90iAAMZaMV_ps90MJg6et1CbolCLwZK87cAAmmOAAKQ9ylKZE8BRCtZIUY2BA" },
+          { title: "Жим Арнольда", fileId: "BAACAgIAAyEGAAS2J90iAAMaaMV_qL6fNVfDuQ51u1ILhWxAD18AAmqOAAKQ9ylK6ESB6NTnpg82BA" },
+          { title: "Жим Арнольда варіація", fileId: "BAACAgIAAyEGAAS2J90iAAMbaMV_q1f0XZXNNH0ZLS93HJfQOUUAAmuOAAKQ9ylKJR6eZuzwDyk2BA" },
+          { title: "Жим в тренажері", fileId: "BAACAgIAAyEGAAS2J90iAAMcaMV_rtVuEfD4NKT6IAw9cCJzIQkAAm2OAAKQ9ylKZ32nG_EtG542BA" },
+          { title: "Армійський жим", fileId: "BAACAgIAAyEGAAS2J90iAAMdaMV_sMPx523lD-kuxquVtzJfpJIAAm6OAAKQ9ylKhNlyjoGTdfs2BA" },
+          { title: "Жим в сміті сидячи", fileId: "BAACAgIAAyEGAAS2J90iAAMeaMV_sxSd86hXOjpnKssaF122OjsAAnCOAAKQ9ylKLNhyHIkAAVdUNgQ" },
+          { title: "Підйом рук перед собою з прямою рукояткою в сміті", fileId: "BAACAgIAAyEGAAS2J90iAAMfaMV_tsQ-RogQSjbE-bP79EUZipsAAnGOAAKQ9ylKFFFsYZAn-uE2BA" },
+          { title: "Жим в кросовері прямою рукояткою стоячи", fileId: "BAACAgIAAyEGAAS2J90iAAMgaMV_uBlORZINZObcwrZ8MM18tZ0AAnKOAAKQ9ylKhIZHITQfDmc2BA" },
+          { title: "Підйом рук перед собою в кросовері з канатом", fileId: "BAACAgIAAyEGAAS2J90iAAMhaMV_u-V2fmfNFvQHOm1lwyUOx4kAAnSOAAKQ9ylKIdu5QF9A1082BA" },
+          { title: "Підйом рук перед собою з гантелями", fileId: "BAACAgIAAyEGAAS2J90iAAMiaMV_vnq5CYwkv5t6IOUY541DBcAAAnWOAAKQ9ylKpdiCjocL-902BA" },
+          { title: "Підйом рук перед собою з блинчиком", fileId: "BAACAgIAAyEGAAS2J90iAAMjaMV_wEpERF64UXbIaHXCPZFplikAAnaOAAKQ9ylKDoZrNwgnt2U2BA" },
+          
         ],
       },
       {
         key: "mid-delta",
         title: "Середня дельта",
         exercises: [
-     
+          { title: "Махи в сторони стоячи", fileId: "BAACAgIAAyEGAAS2J90iAAMraMV_31qpi1JInrzE_FA225jW5QEAAoCOAAKQ9ylKEy51GGR7gQ02BA" },
+          { title: "Махи в сторону сидячи", fileId: "BAACAgIAAyEGAAS2J90iAAMsaMV_4bIgRmjkzmyneIMtYOH3qJYAAoGOAAKQ9ylKGzUYyaSNS302BA" },
+          { title: "Махи в сторону упор боком в похилу лавочку", fileId: "BAACAgIAAyEGAAS2J90iAAMtaMV_4x2DIzkpXxMTyKi9n7B1fEkAAoKOAAKQ9ylKVZtI7uTgFR82BA" },
+          { title: "Махи в сторону в боковому нахилі", fileId: "BAACAgIAAyEGAAS2J90iAAMvaMV_6a7Ec8vjaloXOQOmlzBkZtEAAoaOAAKQ9ylKD-Eha1VPu8g2BA" },
+          { title: "Махи в сторону в кросовері", fileId: "BAACAgIAAyEGAAS2J90iAAMwaMV_7JuIX6xYYxZUiJbWV_YoDa4AAoeOAAKQ9ylKAqsc-P11AnM2BA" },
+          { title: "Протяжка зі штангою", fileId: "BAACAgIAAyEGAAS2J90iAAMmaMV_x7IyuZvxx08qwqwIty2zQGoAAnmOAAKQ9ylKcdjv-iD91S42BA" },
+          { title: "Протяжка з гантелями", fileId: "BAACAgIAAyEGAAS2J90iAAMlaMV_xV52CBzwljKWtpw_TjhgL7wAAniOAAKQ9ylKXxgVYZ8t37c2BA" },
+          { title: "Протяжка в кросовері з канатом", fileId: "BAACAgIAAyEGAAS2J90iAAMkaMV_wqGSrb-2pGxrPUdblM6WP38AAneOAAKQ9ylK3lAZGFnb6Aw2BA" },
+          { title: "Протяжка в сміті", fileId: "BAACAgIAAyEGAAS2J90iAAMnaMV_yzdrMYpAmPkZ5-zl1_UoTm0AAnuOAAKQ9ylKlQSN-VJzScc2BA" },
+          { title: "Махи в сторону в тренажері", fileId: "BAACAgIAAyEGAAS2J90iAAMxaMV_768sGsIS3bzuKlyMmRXopQsAAoiOAAKQ9ylKNFRFYqFWrJA2BA" },
         ],
       },
       {
         key: "rear-delta",
         title: "Задня дельта",
         exercises: [
+          { title: "Тяга в кросовері до обличчя, канатом", fileId: "BAACAgIAAyEGAAS2J90iAAMoaMV_zYSEM88qlwXdH-yJ86rO0p8AAnyOAAKQ9ylKSD2iBUDg8Cc2BA" },
+          { title: "Зворотня бабочка", fileId: "BAACAgIAAxkBAAE7GN5oxsKy4OvtkvP-PV_oLK13WEzppAACvokAAsOBOEqa4jbPDyRSLjYE" },
           { title: "Тяга гантелей на лавці", fileId: "BAACAgIAAyEGAAS2J90iAAMqaMV_1NQHdA0oBY6LzDtr75tXwZgAAn6OAAKQ9ylK_czmbdbxRbg2BA" },
-      
+          { title: "Тяга в нахилі в сміті", fileId: "BAACAgIAAyEGAAS2J90iAAMpaMV_0fgl5zLybb_xQMjvIgGz7IAAAn2OAAKQ9ylKi26sLiDwmzo2BA" },
         ],
       },
     ],
