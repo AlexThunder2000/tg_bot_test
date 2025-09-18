@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-// src/index.ts
 const { Bot, webhookCallback, InlineKeyboard } = require("grammy");
 const { CATEGORIES } = require("./data");
 
@@ -162,7 +161,7 @@ async function handleRequest(request) {
 
   // 3) Ледача ініціалізація бота
   if (!bot) {
-    bot = buildBot(BOT_TOKEN);
+    bot = await buildBot(BOT_TOKEN);
   }
 
   // 4) Передаємо апдейт у grammY
