@@ -9,7 +9,7 @@ async function buildBot(token) {
   const b = new Bot(token);
 
   // Ініціалізація бота
-  await b.init();
+  await b.init(); // Ensure the bot is initialized
 
   // Головне меню
   const mainMenu = () => new InlineKeyboard()
